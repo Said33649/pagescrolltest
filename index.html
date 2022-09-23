@@ -1,0 +1,48 @@
+<!doctype html>
+  <html>
+    <head>
+      <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+
+      <script type="text/javascript" src="jquery.js"></script>
+      <script type="text/javascript" src="Scrollify-master/jquery.scrollify.js"></script>
+      <script type="text/javascript" src="main.js"></script>
+      <script>
+        $(function() {
+          $.scrollify({
+            section : ".example-classname",
+          });
+        });
+      </script>
+    </head>
+    <body>
+      <div class="example-classname">
+        <img src="image_3.png">
+      </div>
+      <div class="example-classname">
+        <img src="image_4.png">
+      </div>
+
+      <style>
+
+        body::-webkit-scrollbar {
+          width: 0;
+        }
+
+        body {
+          margin: 0;
+          padding: 0;  
+        }
+
+        img {
+          width: 100%;
+          height: 100vh;
+          object-fit: cover;
+        }
+
+        .example-classname {
+          width: 100%;
+          height: 100vh;
+        }
+      </style>
+    </body>
+  </html>
